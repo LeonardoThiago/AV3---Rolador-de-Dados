@@ -8,7 +8,7 @@ let dados = [
     { tipo: '2d100', quantidade: 2, faces: 100 },
     { tipo: '2d1000', quantidade: 2, faces: 1000 }
 ];
-let dadoAtual = 5; // Iniciar com 2d20
+let dadoAtual = 5;
 
 function atualizarNome() {
     const nome = document.getElementById('nome').value.trim();
@@ -102,6 +102,6 @@ function atualizarAtributos() {
     atualizarMana();
 }
 
-// Inicialização
+
 trocarDado(0);
 atualizarAtributos();
