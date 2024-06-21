@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de RPG</title>
+    <link rel="stylesheet" href="Fundo.css">
+</head>
+<body>
+    <div class="ficha">
+        <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" oninput="atualizarNome()">
+        </div>
+        <div class="campo">
+            <label for="nivel">Nível:</label>
+            <input type="number" id="nivel" value="1" min="1" oninput="atualizarNome(); atualizarAtributos()">
+        </div>
+        <div class="campo">
+            <label for="forca">Força:</label>
+            <input type="number" id="forca" value="10" min="0" readonly>
+        </div>
+        <div class="campo">
+            <label for="agilidade">Agilidade:</label>
+            <input type="number" id="agilidade" value="0" min="0" readonly>
+        </div>
+        <div class="campo">
+            <label for="armadura">Armadura:</label>
+            <input type="number" id="armadura" value="0" min="0" readonly>
+        </div>
+        <div class="campo">
+            <label for="inteligencia">Inteligência:</label>
+            <input type="number" id="inteligencia" value="0" min="0" readonly>
+        </div>
+        <div class="campo">
+            <label for="sabedoria">Sabedoria:</label>
+            <input type="number" id="sabedoria" value="0" min="0" readonly>
+        </div>
+        <div class="campo">
+            <label for="constituicao">Constituição:</label>
+            <input type="number" id="constituicao" value="10" min="0" readonly>
+        </div>
+        <div class="campo">
+            <label for="defesa">Defesa:</label>
+            <input type="number" id="defesa" readonly>
+        </div>
+        <div class="campo">
+            <label for="nomeAtualizado">Nome Atualizado:</label>
+            <input type="text" id="nomeAtualizado" readonly>
+        </div>
+
+        <div class="stats">
+            <div class="campo">
+                <label for="vida">Vida:</label>
+                <input type="number" id="vida" readonly>
+            </div>
+            <div class="campo">
+                <label for="mana">Mana:</label>
+                <input type="number" id="mana" readonly>
+            </div>
+            <div class="campo">
+                <label for="poderAtaque">Poder de Ataque:</label>
+                <input type="number" id="poderAtaque" readonly>
+            </div>
+            <div class="campo">
+                <label for="poderMagico">Poder Mágico:</label>
+                <input type="number" id="poderMagico" readonly>
+            </div>
+        </div>
+
+        <button class="botao-trocar-dado" onclick="trocarDado(-1)">Dado Anterior</button>
+        <button class="botao-trocar-dado" onclick="trocarDado(1)">Próximo Dado</button>
+
+        <button class="botao-rolar" onclick="rolarDados()">Rolar 2d20</button>
+
+        <div class="resultados" id="resultados"></div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>

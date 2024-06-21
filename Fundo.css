@@ -1,0 +1,73 @@
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+.ficha {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #1E1E1E;
+    position: relative;
+}
+.campo {
+    margin-bottom: 10px;
+}
+.campo label {
+    display: block;
+    font-weight: bold;
+}
+.botao-rolar {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.botao-rolar:hover {
+    background-color: #0056b3;
+}
+input[type="text"], input[type="number"] {
+    background-color: #333;
+    color: #E0E0E0;
+    border: 1px solid #555;
+}
+.stats {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 175px;
+}
+.stats .campo {
+    margin-bottom: 5px;
+}
+.botao-trocar-dado {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botao-trocar-dado:hover {
+    background-color: #218838;
+}
+.resultados {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    color: #E0E0E0;
+    max-height: 100px;
+    overflow-y: auto;
+}
